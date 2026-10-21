@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find your somewhere. Sola is a collection of considered stays for slower, more meaningful escapes."
+    />
+    <meta name="theme-color" content="#f7f6f1" />
+    <title>Sola — Find your somewhere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Sola home">
+        <span class="wordmark-mark" aria-hidden="true">s</span>
+        <span>sola</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        aria-label="Open navigation"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="#stays">The stays</a>
+        <a href="#story">Our story</a>
+        <a href="#journal">Journal</a>
+        <a class="nav-cta" href="#stays">
+          Find your stay
+          <svg viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M3 8h10M8 3l5 5-5 5" />
+          </svg>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> A little closer to what matters</p>
+          <h1 id="hero-title">Find your<br /><em>somewhere.</em></h1>
+          <p class="hero-description">
+            Thoughtful places to stay, made for taking the long way round and feeling a little
+            more like yourself.
+          </p>
+          <a class="button button-dark" href="#stays">
+            Explore our stays
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M3 8h10M8 3l5 5-5 5" />
+            </svg>
+          </a>
+          <div class="hero-note">
+            <div class="avatar-stack" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&h=80&q=80" alt="" />
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&h=80&q=80" alt="" />
+              <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=80&h=80&q=80" alt="" />
+            </div>
+            <p><strong>Loved by 12,000+</strong><br />slow-travel people</p>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img
+            class="hero-image"
+            src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=1800&q=90"
+            alt="A quiet cabin tucked into a green woodland"
+            fetchpriority="high"
+          />
+          <div class="image-wash"></div>
+          <div class="image-caption">
+            <span class="caption-kicker">THE HIDEAWAY</span>
+            <span class="caption-location">Lake District, England</span>
+          </div>
+          <div class="hero-stamp" aria-label="A slower kind of somewhere">
+            <svg viewBox="0 0 100 100" aria-hidden="true">
+              <defs>
+                <path id="stamp-circle" d="M50,50 m-35,0 a35,35 0 1,1 70,0 a35,35 0 1,1 -70,0" />
+              </defs>
+              <text>
+                <textPath href="#stamp-circle">A SLOWER KIND OF SOMEWHERE · </textPath>
+              </text>
+            </svg>
+            <span class="stamp-sun" aria-hidden="true">✳</span>
+          </div>
+          <div class="image-index"><span>01</span><i></i> 04</div>
+        </div>
+        <a class="scroll-cue" href="#stays"><span></span> SCROLL A LITTLE</a>
+      </section>
+
+      <section class="intro section-pad" id="story">
+        <p class="eyebrow"><span></span> Not just a place to sleep</p>
+        <div class="intro-content">
+          <h2>Somewhere that<br />stays <em>with you.</em></h2>
+          <div class="intro-aside">
+            <p>
+              The best trips don’t ask you to do more. They give you room to notice more.
+              We find the places that make that feeling possible.
+            </p>
+            <a class="text-link" href="#journal">
+              Get to know us
+              <svg viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M3 8h10M8 3l5 5-5 5" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="values-row">
+          <article class="value-card">
+            <span class="value-number">01 /</span>
+            <h3>Places with a pulse</h3>
+            <p>Independently owned, thoughtfully restored, rooted right where they belong.</p>
+          </article>
+          <article class="value-card">
+            <span class="value-number">02 /</span>
+            <h3>Room to exhale</h3>
+            <p>Fewer plans, softer mornings, and the lovely luxury of being nowhere else.</p>
+          </article>
+          <article class="value-card">
+            <span class="value-number">03 /</span>
+            <h3>Good things, gently</h3>
+            <p>Local people, lighter footprints, and travel that gives a little back.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="stays section-pad" id="stays">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> A few of our favourites</p>
+            <h2>Take your <em>pick.</em></h2>
+          </div>
+          <a class="text-link desktop-link" href="#newsletter">
+            All 24 stays
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M3 8h10M8 3l5 5-5 5" />
+            </svg>
+          </a>
+        </div>
+        <div class="stay-grid">
+          <a class="stay-card stay-card-large" href="#newsletter">
+            <div class="stay-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=1200&q=85"
+                alt="A secluded wood cabin surrounded by trees"
+                loading="lazy"
+              />
+              <span class="stay-tag">THE WOODLAND</span>
+              <span class="stay-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="stay-meta">
+              <div><h3>The Hideaway</h3><p>Lake District, England</p></div>
+              <span>From £180 <small>/ night</small></span>
+            </div>
+          </a>
+          <a class="stay-card" href="#newsletter">
+            <div class="stay-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1000&q=85"
+                alt="A cosy cabin in a forest clearing"
+                loading="lazy"
+              />
+              <span class="stay-tag">THE MOUNTAINS</span>
+              <span class="stay-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="stay-meta">
+              <div><h3>Little Fern</h3><p>Snowdonia, Wales</p></div>
+              <span>From £145 <small>/ night</small></span>
+            </div>
+          </a>
+          <a class="stay-card" href="#newsletter">
+            <div class="stay-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1000&q=85"
+                alt="A peaceful woodland retreat at golden hour"
+                loading="lazy"
+              />
+              <span class="stay-tag">THE WILDERNESS</span>
+              <span class="stay-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="stay-meta">
+              <div><h3>Moss & Moon</h3><p>Scottish Highlands</p></div>
+              <span>From £210 <small>/ night</small></span>
+            </div>
+          </a>
+        </div>
+        <a class="text-link mobile-link" href="#newsletter">
+          All 24 stays
+          <svg viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M3 8h10M8 3l5 5-5 5" />
+          </svg>
+        </a>
+      </section>
+
+      <section class="quote-section" id="journal">
+        <div class="quote-image">
+          <img
+            src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1400&q=85"
+            alt="Sunlight falling across a still mountain lake"
+            loading="lazy"
+          />
+        </div>
+        <div class="quote-copy">
+          <p class="eyebrow"><span></span> A note from the road</p>
+          <span class="quote-mark" aria-hidden="true">“</span>
+          <blockquote>
+            We came for a weekend. We left remembering what it feels like to have nowhere to be.
+          </blockquote>
+          <p class="quote-attribution">JAMIE & ALEX <span>— GUESTS AT THE HIDEAWAY</span></p>
+          <div class="quote-controls" aria-hidden="true"><span>01</span><i></i><span>04</span></div>
+        </div>
+      </section>
+
+      <section class="newsletter section-pad" id="newsletter">
+        <div>
+          <p class="eyebrow"><span></span> A little note from somewhere</p>
+          <h2>Good places.<br /><em>Occasional emails.</em></h2>
+          <p class="newsletter-description">A thoughtful note from us, every now and then. No noise, ever.</p>
+        </div>
+        <form class="newsletter-form">
+          <label class="sr-only" for="email">Your email address</label>
+          <input id="email" name="email" type="email" placeholder="Your email address" required />
+          <button type="submit" aria-label="Subscribe to the Sola newsletter">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5" /></svg>
+          </button>
+          <p class="form-message" aria-live="polite">By subscribing, you agree to receive the occasional lovely email.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark footer-wordmark" href="#home" aria-label="Sola home">
+        <span class="wordmark-mark" aria-hidden="true">s</span>
+        <span>sola</span>
+      </a>
+      <p>Go gently. Come back changed.</p>
+      <div class="footer-links">
+        <a href="#story">Our story</a>
+        <a href="#stays">The stays</a>
+        <a href="mailto:hello@solastays.example">Say hello</a>
+      </div>
+      <span class="copyright">© SOLA 2026</span>
+    </footer>
+  </body>
+</html>
